@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trạm trà sữa Nguyễn Nhật Vy</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background-color: #ffb6c1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .site-header img {
+      width: 120px;
+      border-radius: 50%;
+    }
+
+    .site-header h1 {
+      margin: 10px 0;
+      color: #5a2a2a;
+    }
+
+    nav {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5a2a2a;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: white;
+    }
+
+    /* ===== MAIN ===== */
+    main {
+      width: 85%;
+      margin: 30px auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    main h2 {
+      text-align: center;
+      color: #d2691e;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    /* ===== MENU GRID ===== */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .menu-item {
+      background-color: #ffe4e1;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .menu-item h3 {
+      margin: 10px 0;
+      color: #5a2a2a;
+    }
+
+    .menu-item p {
+      font-weight: bold;
+      color: #b22222;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #ffb6c1;
+      text-align: center;
+      padding: 20px;
+      color: #5a2a2a;
+      font-weight: bold;
+    }
+
+    footer iframe {
+      max-width: 600px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        grid-template-columns: repeat(2, auto);
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <img src="images/download.png" alt="Logo">
+    <h1>Trạm trà sữa Nguyễn Nhật Vy</h1>
+
+    <nav>
+      <a href="#">Poly</a>
+      <a href="#">FU</a>
+      <a href="#">FH</a>
+      <a href="#">SH</a>
+      <a href="#">FT</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <h2>Bảng menu</h2>
+
+    <!-- VÍ DỤ NGẮN -->
+    <p class="intro">
+   https://youtube.com/shorts/IAdFZfqBgM0?si=GGnd4OXuOBxKfMUn
+    </p>
+
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Trà sữa truyền thống</h3>
+        <p>25.000đ</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Trà sữa matcha</h3>
+        <p>30.000đ</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Trà sữa socola</h3>
+        <p>30.000đ</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Trà đào cam sả</h3>
+        <p>28.000đ</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Trà sữa trân châu đường đen</h3>
+        <p>32.000đ</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Trà vải</h3>
+        <p>27.000đ</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>📍 Trà sữa Hướng Dương – TP. Hồ Chí Minh</p>
+
+    <iframe
+      src="https://www.google.com/maps?q=Trà+sữa+Hướng+Dương&output=embed"
+      width="90%"
+      height="220"
+      style="border:0;"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+
+    <p style="margin-top:10px;">
+      © 2026 CSS Grid – ASM Nguyễn Nhật Vy
+    </p>
+  </footer>
+
+</body>
+</html>
